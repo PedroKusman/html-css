@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+
+    <div>
+        <p>
+            Tente abrir esse site em varios dispositivos ou simplismente aumente e diminua o tamanho do seu navegador.
+        </p>
+
+        <picture>
+           <source media="(max-width:750px )" srcset="imagens/foto-p.png.png" type="image/png">
+           <source media="(max-width: 1050px )" srcset="imagens/foto-m.png.png" type="image/png">
+           <img src="imagens/foto-g.png.png" alt="imagem flexivel">
+        </picture>
+    </div>
+   
+    <div>
+        <h2>Reproduzindo Audio</h2>
+        <p>Vamos aprender a reproduzir audios em HTML5.</p>
+        <audio preload="metadata" autoplay controls>
+            <source src="midia/cowboy mk2.mp3" type="audio/mpeg">
+            <source src="midia/cowboy mk2.ogg" type="audio/ogg">
+            <source src="midia/cowboy mk2.wav" type="audio/wav">
+        </audio>
+
+        <p>
+            infelizmente seu navegador nao consegue reproduzir audio <a href="midia/cowboy mk2.mp3" target="_blank" rel="external">clique aqui</a> para baixar o arquivo MP3
+        </p>
+    </div>
+</body>
+</html>
