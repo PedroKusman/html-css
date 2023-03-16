@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    background-color: rgba(239, 241, 243);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-wrapper {
+    padding: 50px;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    border-bottom: 3px solid rgba(239, 241, 243);
+    border-radius: 20px 20px 0 0;
+}
+
+.header-left {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    gap: 14px; 
+}
+
+.logo-wrapper {
+    padding-right: 20px;
+    border-right: 1px solid #DDD;
+}
+
+.foto-logo {
+    background-image: linear-gradient(to bottom, black, blue);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+}
+
+.title > a {
+    color: black;
+}
+
+.gray {
+    padding: 4px;
+    background-color: #EFEFEF;
+    color: #595959; 
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.red {
+    padding: 4px;
+    background-color: rgba(255, 182, 193, 0.486);
+    color: lightcoral;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+}
+
+.foto {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.foto:not(:last-child) {
+    margin-right: -6px;
+}
+
+.foto1 {
+    background-color: rgb(35, 147, 185);
+}
+
+.foto2 {
+    background-color: limegreen;
+}
+
+.foto3 {
+    background-color: rgb(188, 38, 196);
+}
+
+.foto4 {
+    background-color: rgb(191, 191, 191);
+}
+
+.principal {
+    padding: 8px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 6px;
+    background-color: #115EFA;
+}
+
+.complete {
+    color: white;
+}
+
+.head, .corpo {
+    background-color: #F9FBFC;
+}
+
+main {
+    padding: 86px 148px 250px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-block-end: 30px;
+}
+
+.lista {
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.main-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subgroup {
+    color: gray;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 8px;
+    font-size: small;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.098);
+}
+
+.task-left .task-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.task-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.img1 {
+    background-image: linear-gradient(to right, white, lightblue);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+.img2 {
+    background-image: linear-gradient(to left, red, brown);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+.img3 {
+    background-image: linear-gradient(to top, rgb(65, 6, 6), rgb(15, 98, 126));
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+.img4 {
+    background-image: linear-gradient(to bottom, rgb(246, 249, 246), rgb(117, 7, 7));
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+.img5 {
+    background-image: linear-gradient(to top, rgba(22, 121, 182, 0.92), white);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+.img6 {
+    background-image: linear-gradient(to right, rgb(5, 131, 43), rgb(235, 235, 235));
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+}
+
+.task-img1 {
+    background-color: rgb(54, 250, 100);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.task-img2 {
+    background-color: blue;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.task-img3 {
+    background-color: rgb(70, 70, 70);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.task-img4 {
+    background-color: yellow;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.task-img5 {
+    background-color: red;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.task-img6 {
+    background-color: rgb(244, 114, 233);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.data {
+    color: #595959a1;
+}
+
+.task-sub2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    padding: 14px;
+    margin-top: 16px;
+    
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+    background-color: rgb(245, 243, 243);  
+}

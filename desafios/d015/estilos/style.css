@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+:root {
+    --font-noto:'Noto serif', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+
+    --cor-black: #000000;
+    --cor-white: #ffffff;
+
+}
+
+body {
+    font-family: var(--font-lato);
+    padding: 28px;
+}
+
+header,
+main h1,
+hr,
+.app, 
+.graphics,
+.h2-pag2,
+.text-pag2 p {
+    margin-bottom: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-right {
+    display: flex;
+    gap: 14px;
+}
+
+main h1 {
+    font-family: var(--font-noto);
+    line-height: 1.4;
+}
+
+main h2,
+main .text-pag2 {
+    font-weight: normal;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.content-main .app {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.content-main .app .app-info {
+    display: flex;
+    flex-flow: column;
+    gap: 4px;
+}
+
+main .bold {
+    font-weight: bold;
+}
+
+.content-main .task-button {
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+
+.content-main .task-button .button {
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid var(--cor-black);
+}
+
+.content-main .task-button .negrinho {
+    background-color: var(--cor-black);
+    color: var(--cor-white);
+    border: 2px solid var(--cor-white);
+}
+
+.links a {
+    text-decoration: underline;
+    color: var(--cor-black);
+    font-size: 18px;
+}
