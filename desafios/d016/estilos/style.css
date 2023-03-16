@@ -150,10 +150,12 @@ main .content-main .img-1 {
 .button {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--cor-lighter-purple);
     color: var(--cor-purple);
     font-weight: bold;
-    width: 60%;
+    width: 50%;
+    white-space: pre;
     border-radius: 20px;
     padding: 10px 30px;
     margin-bottom: 10px;
