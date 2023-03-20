@@ -202,8 +202,9 @@ main .content-main .img-1 {
     box-shadow: 0px 4px 6px -4px var(--cor-black);
 }
 
-.check-box img {
-    border-radius: 50%;
+.check {
+    top: 40%;
+    right: 15px;
 }
 
 .img-2 .lampada {
@@ -352,3 +353,75 @@ hr {
     align-items: center;
     padding-right: 10px;
 }
+
+.box-list {
+    display: flex;
+    flex-flow: column;
+}   
+
+.box-list .separador {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-list .separador .left,
+.box-list .bottom {
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+
+.box-list .bold {
+    font-weight: bold;
+}
+
+.box-list li {
+    margin: 12px 0;
+    color: var(--cor-gray);
+}
+
+.rodape {
+   text-align: center;
+   text-decoration:underline;
+}
+
+.rodape .text-rodape a {
+    margin: 10px;
+    color: var(--cor-black);
+}
+
+@media only screen and (min-width: 480px) {
+    .content-main .text-clients 
+    {justify-content: center;} 
+
+    .img-2 .lampada,
+    .img-3 .social {top:65%;}
+    
+    .box-codery .check {top:70%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    
+   
+    .tasks { width: 50%;}
+
+    .center {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;}
+
+    
+    .img-2 .lampada,
+    .img-3 .social {top:80%;}
+    
+    .box-codery .check {top:75%;
+    left: 15px;}
+
+    .img-3 .social {width: 50%;}
+
+    .box-list {padding-right: 50%;}
+
+
+}
+
