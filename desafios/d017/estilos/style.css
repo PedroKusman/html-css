@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --cor-dec1:#FFFFFF;
+    --cor-dec2:#FAFBFC;
+    --cor-dec3:#24292F;
+    --cor-dec4:#2A3138;
+    --cor-dec5:#3F4449;
+    --cor-dec6:#808080;
+    --cor-dec7:#00CF55;
+    --cor-dec8:#275DDA;
+    --cor-dec9:#000000;
+    --font: 'Roboto', sans-serif;
+}
+
+
+body {
+    font-family: var(--font);
+    
+}
+
+header {
+    padding: 8px;
+    background-color: var(--cor-dec3);
+}
+
+header .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+header .main-header span {
+    color: var(--cor-dec1);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px; 
+}
+
+main .content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main .main-top {
+    background-color: var(--cor-dec4);
+    color: var(--cor-dec1);
+}
+
+main .main-top h1,
+main .main-bottom h1{
+     font-size: 34px;
+}
+
+main .main-top-text h1 {
+    margin-bottom: 16px;
+}
+
+main .main-top p,
+main .main-bottom .git {
+    color: var(--cor-dec6);
+}
+
+main .button {
+    width: auto;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 4px -2px var(--cor-dec9);
+}
+
+main .main-top p strong {
+    color: var(--cor-dec1);
+}
+
+main .main-top .green {
+    background-color: var(--cor-dec7);
+    color: var(--cor-dec1);
+}
+
+
+main .main-bottom {
+    background-color: var(--cor-dec1);
+}
+
+main .main-bottom .white {
+    background-color: var(--cor-dec1);
+    color: var(--cor-dec8);
+    font-weight: bold; 
+}
+
+footer {
+    background-color: var(--cor-dec4);
+    padding: 8px;
+}
+
+footer .copyright {
+    align-items: center;
+}
+
+footer .copyright .cb {
+    color: var(--cor-dec1);
+    font-size: 14px;
+}
+
+footer .copyright .itens {
+    display: flex;
+    align-items: center;
+    gap:16px;
+    margin-bottom: 16px;
+}
+
+footer .copyright svg {
+    color: var(--cor-dec1);
+}
+
+footer .copyright .list {
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor-dec1);
+}
+
+footer .copyright .list img {
+    border-radius: 10px;
+}
+
+footer .copyright .list li {
+    margin-bottom: 10px;
+}
+
+
+footer .bar {
+    width: 100%;
+    height: 1px;
+    background-color: var(--cor-dec1);
+    margin-bottom: 10px;
+}
+
+footer .not-copy {
+    color: var(--cor-dec1);
+    text-align: center;
+    line-height: 2;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+main .form {
+    display: none;
+    padding: 16px;
+    background-color: var(--cor-dec2);
+    color: var(--cor-dec9);
+    width: 400px;
+    min-width: 400px;
+}
+
+main .form .fild {
+    text-align:start;
+    padding: 6px;
+}
+
+main .form .fild input {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #EEE;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+main .form .text {
+    text-align:left;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+main .form .text-pass strong {
+    color: var(--cor-dec7);
+}
+
+main .form .pass a,
+main .form .privacy strong {
+    color: var(--cor-dec8);
+}
+
+main .form .privacy {
+    text-align: center;
+}
+
+.form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main-header2 {
+    display: none;
+    gap: 12px;
+    color: var(--cor-dec6);
+}
+
+.main-header2 .fild {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-header2 .fild a {
+    color: var(--cor-dec1);
+}
+
+.main-header2 .text-header {
+    flex-grow: 1;
+}
+
+.main-header2 input {
+    background-color: var(--cor-dec5);
+    border: none;
+    padding: 3px 10px;
+    
+}
+
+@media screen and (min-width:468px) {
+
+    footer .copyright .itens {
+        flex-flow: row;
+        justify-content: left;
+        gap: 20px;
+    }
+
+    footer .copyright .list {
+        justify-content: left;
+    }
+
+    footer .copyright .list ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    footer .not-copy {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    footer .copyright .list img {
+        border-radius: 10px;
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 8px 20px;
+    }
+
+    main .content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .main-bottom.container {
+        max-width: 600px;
+    }
+
+    main .mobile {
+        display: none;
+    }
+
+    main .form {
+        display: block;
+    }
+
+
+    footer .copyright {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer .copyright .itens {
+        flex-flow: row;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .mobile {
+        display: none;
+    }
+
+    .main-header2 {
+        display: flex;
+    }
+    
+    main .main-top .content {
+        flex-flow: row;
+        gap: 200px;
+    }
+    
+    .main-bottom.container {
+        max-width: 900px;
+    }
+
+    main .main-top h1,
+    main .main-bottom h1 {
+        font-size: 60px;
+        text-align: start;
+    }
+
+    main .main-top p {
+        font-size: 26px;
+        line-height: 1.4;
+        text-align: start;
+    }
+
+    main .main-bottom p {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+}
